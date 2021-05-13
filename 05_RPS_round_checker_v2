@@ -1,5 +1,6 @@
 #Function used to check input is valid
 
+
 def check_rounds():
   while True:
     response = input("How many rounds: ")
@@ -33,7 +34,6 @@ end_game = "no"
 while end_game == "no":
 
 
-
   #rounds heading
   print()
   if rounds == "":
@@ -51,10 +51,16 @@ while end_game == "no":
   if choose == "xxx":
     break
 
-#  **** rest of loop / game ****
+  #  **** rest of loop / game ****
+  print("you chose {}".format(choose))
+
+  rounds_played += 1
+
+  #end game if requested # of rounds have been played
+  if rounds_played == rounds:
+    break
 
 print("Thank you for playing")
-
 
 
 
